@@ -1,0 +1,15 @@
+Name: Samuel Chan
+
+NetID: spc28
+
+Hours Spent: 10
+
+Consulted With: bl178, vl54, drt25
+
+Resources Used: Stackoverflow for iterating through sets and lists
+
+Difficulty level: 8
+Impressions: Not too bad, but cut into my thanksgiving break :(
+
+----------------------------------------------------------------------
+

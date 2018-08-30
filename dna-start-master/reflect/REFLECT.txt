@@ -1,0 +1,7 @@
+Name: Samuel Chan
+NetID: spc28
+Hours Spent: 8
+Consulted With: idr4, jtb60
+Resources Used: Stackoverflow for toString(), javadocs for String, Linked Lists, google for documentation on linked lists
+Difficulty level: 8
+Impressions: Code not too bad but analysis is hard as heck

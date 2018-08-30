@@ -1,0 +1,50 @@
+Name: Samuel Chan
+NetID: spc28
+Hours Spent: 10
+Consulted With: cpb30, jpc41
+Resources Used: Javadocs, instructions for Huffman
+Impressions: Unclear instructions
+----------------------------------------------------------------------
+1. Provide an overview for how you tested your HuffProcessor. Describe any input files you used or created. Were there any special cases you considered?
+
+I tested HuffProcessor by methods...first Decompress by testing input files like monarch, mystery, and hidden1 / hidden2, which created their respective .unhf files. Then I opened them with a image viewer program or text editor to see whether they gave reasonable information that made sense.
+
+Then, I tested Compress by compressing files such as monarch.tif.unhf and mystery.tif.unhf and saw if after compressing and decompressing and removing the .unhf.hf, I could get coherent data that made sense. When I found that these files worked, I realized my code was fully functional.
+
+2. Benchmark your code on the given calgary and waterloo directories. Develop a hypothesis from empirical data for how the compression rate and time depend on file length and alphabet size. To determine the alphabet size you'll need to add code to your compression method(s) to print the number of non-zero character counts/nodes in the priority queue/leaf nodes in the Huffman Tree (these are the same value).
+
+Based on the data below, it is hypothesized that the larger the file length and the larger the alphabet size, the longer the compression rate will be.
+
+Some Waterloo Files:
+FORMAT: Seconds for File name, file size, alphabet size (# of non-zero nodes)
+
+0.142s for zelda, 262274, 187
+0.023s for washout, 262274, 50
+0.118s for tulips, 1179784, 253
+0.004s for text, 65666, 17
+0.056s for mountain, 307330, 117
+0.004s for circles, 65666, 20
+
+Some Calgary Files:
+FORMAT: Seconds for File name, file size, alphabet size (# of non-zero nodes)
+
+0.09s for trans, 93695, 99
+0.06s for prop, 49379, 89
+0.005s for paper3, 46526, 84
+0.024s for obj2, 246814, 256
+0.046s for book2, 610856, 96
+0.034s for news, 377109, 98
+
+
+3.Do text files or binary (image) files compress more (compare the calgary (text) and waterloo (image) folders)? Explain why.
+
+Text files compress much more (percent space saved is much greater) than binary/image files by a significant margin. While images only compress at max 10% (usually less!), text files can compress by more than 40%. 
+
+This is because text files are meant to be readable and are essentially just characters; hence, they are easier to compress because they are closer to bits and bytes. Binary files are custom data that must be structured and blocked with headers and such. Thus, much essential data components much be preserved as much as possible and it takes more space to compress it. Also, binary files are already mostly compressed by their format (jpg, tif, pdf, etc.) while text files are not compressed at all
+
+
+4.Can additional compression can be achieved by compressing an already compressed file? Explain why Huffman coding is or is not effective after the first compression.
+
+Yes, but only if the original algorithm for compressing is not especially strong and can be improved on. There is of course a certain fixed (though hard to determine?) limit at which a file can no longer be compressed. Huffman coding is very effective after the first compression and cannot be much improved on if at all.
+
+

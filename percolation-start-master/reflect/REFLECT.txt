@@ -1,0 +1,7 @@
+Name: Samuel Chan
+NetID: spc28
+Hours Spent: 6
+Consulted With: Jane Li, Justin Suh
+Resources Used: Javadocs
+Difficulty level: 5
+Impressions: Not extremely difficult practically, but conceptually somewhat challenging. 

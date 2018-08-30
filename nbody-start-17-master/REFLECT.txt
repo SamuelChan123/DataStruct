@@ -1,0 +1,40 @@
+Your name and NetID: Samuel Chan, spc28
+
+Hours Spent: Give the date you started the assignment, the date you completed the assignment, and an estimate of the number of hours you worked on it
+
+Started roughly Sept 3rd, completed by Sept 6th, spent roughly 3 hours on it
+
+Consulted with: A list of the students, TAs, and professors with whom you consulted on the assignment. Since assignments are to be your own work, you should keep track of anyone with whom you have had a significant conversation about a program. You are welcome to talk with the course staff about the assignment, and to other students about broad ideas and concepts. If you did not consult with anyone, you must explicitly state that fact.
+
+I did not consult with any students, TAs, or professors for this project
+
+Resources used: Note any books, papers, or online resources that you used in developing your solution. If you did not use any outside resources, you must explicitly state that fact.
+
+I looked at javadocs, and I used stack overflow to find examples and usage of certain classes like Scanner and the try/catch statement, etc.
+
+Impressions: You may include your impressions of the assignment to help the course staff improve it in the future.
+
+It seems like a good intro project, though I got stuck a few times on some stupid mistakes I made in the code
+
+Answers to questions:
+1. What is the final position of the planets (using the planets.txt file) after 1,000,000 and 2,000,000 seconds with a timestep of 25,000?
+
+1,000,000s: 
+
+-8.3594e+10 -1.2605e+11  2.2203e+04 -1.9849e+04  5.9740e+24    earth.gif
+-1.2158e+11  1.8110e+11 -2.1618e+04 -1.2973e+04  6.4190e+23     mars.gif
+-6.2054e+10  1.9323e+10 -3.2423e+04 -3.4599e+04  3.3020e+23  mercury.gif
+ 5.6047e+05  3.9543e+06 -7.2850e-02  1.5720e-01  1.9890e+30      sun.gif
+ 1.1198e+11  1.4226e+10 -7.3491e+02  3.3724e+04  4.8690e+24    venus.gif
+
+2,000,000s:
+
+-1.5176e+11 -3.2878e+09 -6.3893e+03 -2.9514e+04  5.9740e+24    earth.gif
+-1.3708e+11  1.7344e+11 -2.1139e+04 -1.3322e+04  6.4190e+23     mars.gif
+ 1.9795e+10  7.5149e+10 -2.7568e+04  3.5470e+04  3.3020e+23  mercury.gif
+ 4.6101e+05  1.4879e+07 -7.1103e-02  2.2617e-01  1.9890e+30      sun.gif
+ 9.5311e+10 -7.1536e+10  2.4984e+04  2.0976e+04  4.8690e+24    venus.gif
+ 
+1. Run the simulation with data/planets.txt and both a large value for totalTime (a billion or 109 works) and a large value for dt (a million or 106 works). You should observe behavior that isn't consistent with what celestial bodies should do. This behavior is due to using large values for dt in approximating the forces that act on the bodies. Write down what behavior you see in the simulation and a sentence or two in which you explain as best you can why large values don't result in accurate simulations.
+
+When a large totalTime and a large value for dt is used and the program is ran, the planets dash around the sun and fly off the screen in a circular path and disappear. Large values probably don’t result in accurate simulations because the computations in the program due to the large dt and totalTime could exceed the storage space of primitive data types like double. 
